@@ -1,0 +1,365 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#edf2f7;
+    padding:30px;
+}
+
+.container{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    box-shadow:0px 0px 20px rgba(0,0,0,.15);
+
+}
+
+h1{
+
+    text-align:center;
+
+    color:#0d47a1;
+
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+.notation{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:25px;
+
+    margin-bottom:30px;
+
+}
+
+.matrixBox{
+
+    border:3px solid #1565c0;
+
+    padding:15px 30px;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    border-radius:10px;
+
+    background:#e3f2fd;
+
+    color:#0d47a1;
+
+}
+
+.arrow{
+
+    font-size:40px;
+
+    color:#1565c0;
+
+}
+
+.controls{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:25px;
+
+}
+
+label{
+
+    font-weight:bold;
+
+}
+
+select{
+
+    padding:10px;
+
+    font-size:16px;
+
+    border-radius:6px;
+
+}
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+.calculate{
+
+    background:#2e7d32;
+
+}
+
+.calculate:hover{
+
+    background:#1b5e20;
+
+}
+
+.clear{
+
+    background:#c62828;
+
+}
+
+.clear:hover{
+
+    background:#8e0000;
+
+}
+
+.controls button{
+
+    background:#1565c0;
+
+}
+
+.controls button:hover{
+
+    background:#0d47a1;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+
+}
+
+table{
+
+    border-collapse:collapse;
+
+    margin:auto;
+
+}
+
+td{
+
+    padding:8px;
+
+}
+
+input{
+
+    width:70px;
+
+    height:45px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    border:1px solid #bbb;
+
+    border-radius:5px;
+
+}
+
+input:focus{
+
+    outline:none;
+
+    border:2px solid #1565c0;
+
+}
+
+hr{
+
+    margin:30px 0;
+
+}
+
+#steps{
+
+    background:#f5f5f5;
+
+    border-left:5px solid #1565c0;
+
+    padding:20px;
+
+    white-space:pre-wrap;
+
+    font-family:Consolas, monospace;
+
+    line-height:1.7;
+
+    max-height:450px;
+
+    overflow:auto;
+
+}
+
+#result{
+
+    text-align:center;
+
+    font-size:18px;
+
+    margin-top:20px;
+
+}
+
+.resultTable{
+
+    border-collapse:collapse;
+
+    margin:auto;
+
+}
+
+.resultTable td{
+
+    border:1px solid #444;
+
+    padding:12px;
+
+    min-width:70px;
+
+    font-weight:bold;
+
+}
+
+.matrixTable td{
+
+    padding:5px;
+
+}
+
+.matrixTable input{
+
+    background:#fffef7;
+
+}
+
+h2{
+
+    margin-bottom:15px;
+
+    color:#0d47a1;
+
+}
+
+#originalMatrix{
+
+    text-align:center;
+
+}
+
+.success{
+
+    color:green;
+
+    font-weight:bold;
+
+}
+
+.error{
+
+    color:red;
+
+    font-weight:bold;
+
+}
+
+@media(max-width:700px){
+
+.controls{
+
+    flex-direction:column;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+}
+
+button{
+
+    width:100%;
+
+}
+
+.matrixBox{
+
+    font-size:22px;
+
+    padding:10px 20px;
+
+}
+
+.arrow{
+
+    font-size:30px;
+
+}
+
+input{
+
+    width:55px;
+
+    height:40px;
+
+}
+
+}

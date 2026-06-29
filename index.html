@@ -1,0 +1,115 @@
+Html 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Inverse Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Matrix Inverse Calculator</h1>
+
+    <div class="subtitle">
+        Calculate the inverse of a square matrix using
+        <strong>Gauss-Jordan Elimination</strong>
+    </div>
+
+    <div class="notation">
+
+        <div class="matrixBox">
+            [A]
+        </div>
+
+        <div class="arrow">
+            →
+        </div>
+
+        <div class="matrixBox">
+            [A<sup>-1</sup>]
+        </div>
+
+    </div>
+
+    <div class="controls">
+
+        <label>Select Matrix Size</label>
+
+        <select id="size">
+
+            <option value="2">2 × 2</option>
+
+            <option value="3" selected>3 × 3</option>
+
+            <option value="4">4 × 4</option>
+
+            <option value="5">5 × 5</option>
+
+        </select>
+
+        <button onclick="createMatrix()">
+            Create Matrix
+        </button>
+
+    </div>
+
+    <div id="matrixContainer">
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="calculate"
+                onclick="inverseMatrix()">
+
+            Calculate Inverse
+
+        </button>
+
+        <button class="clear"
+                onclick="clearAll()">
+
+            Clear
+
+        </button>
+
+    </div>
+
+    <hr>
+
+    <h2>Input Matrix [A]</h2>
+
+    <div id="originalMatrix">
+
+    </div>
+
+    <hr>
+
+    <h2>Gauss-Jordan Elimination Steps</h2>
+
+    <div id="steps">
+
+        Waiting for calculation...
+
+    </div>
+
+    <hr>
+
+    <h2>Inverse Matrix [A⁻¹]</h2>
+
+    <div id="result">
+
+        No result
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
